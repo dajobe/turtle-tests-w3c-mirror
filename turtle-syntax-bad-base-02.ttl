@@ -1,2 +1,2 @@
-# @base in wrong case
+# @base in wrong case.
 @BASE <http://example/> .
