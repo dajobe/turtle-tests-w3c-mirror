@@ -1148,91 +1148,91 @@
 
 <#turtle-subm-15> rdf:type rdft:TestTurtleEval ;
    mf:name    "turtle-subm-15" ;
-   rdfs:comment "10000 triples, more than the default Bison stack size" ;
+   rdfs:comment "simple long literal" ;
    mf:action    <turtle-subm-15.ttl> ;
    mf:result    <turtle-subm-15.nt> ;
    .
 
 <#turtle-subm-16> rdf:type rdft:TestTurtleEval ;
    mf:name    "turtle-subm-16" ;
-   rdfs:comment "10000 triple objects (10000 triples)" ;
+   rdfs:comment "long literals with escapes" ;
    mf:action    <turtle-subm-16.ttl> ;
    mf:result    <turtle-subm-16.nt> ;
    .
 
 <#turtle-subm-17> rdf:type rdft:TestTurtleEval ;
    mf:name    "turtle-subm-17" ;
-   rdfs:comment "10000 items (10000 triples)" ;
+   rdfs:comment "floating point number" ;
    mf:action    <turtle-subm-17.ttl> ;
    mf:result    <turtle-subm-17.nt> ;
    .
 
 <#turtle-subm-18> rdf:type rdft:TestTurtleEval ;
    mf:name    "turtle-subm-18" ;
-   rdfs:comment "simple long literal" ;
+   rdfs:comment "empty literals, normal and long variant" ;
    mf:action    <turtle-subm-18.ttl> ;
    mf:result    <turtle-subm-18.nt> ;
    .
 
 <#turtle-subm-19> rdf:type rdft:TestTurtleEval ;
    mf:name    "turtle-subm-19" ;
-   rdfs:comment "long literals with escapes" ;
+   rdfs:comment "positive integer, decimal and doubles" ;
    mf:action    <turtle-subm-19.ttl> ;
    mf:result    <turtle-subm-19.nt> ;
    .
 
 <#turtle-subm-20> rdf:type rdft:TestTurtleEval ;
    mf:name    "turtle-subm-20" ;
-   rdfs:comment "floating point number" ;
+   rdfs:comment "negative integer, decimal and doubles" ;
    mf:action    <turtle-subm-20.ttl> ;
    mf:result    <turtle-subm-20.nt> ;
    .
 
 <#turtle-subm-21> rdf:type rdft:TestTurtleEval ;
    mf:name    "turtle-subm-21" ;
-   rdfs:comment "empty literals, normal and long variant" ;
+   rdfs:comment "long literal ending in double quote" ;
    mf:action    <turtle-subm-21.ttl> ;
    mf:result    <turtle-subm-21.nt> ;
    .
 
 <#turtle-subm-22> rdf:type rdft:TestTurtleEval ;
    mf:name    "turtle-subm-22" ;
-   rdfs:comment "positive integer, decimal and doubles" ;
+   rdfs:comment "boolean literals" ;
    mf:action    <turtle-subm-22.ttl> ;
    mf:result    <turtle-subm-22.nt> ;
    .
 
 <#turtle-subm-23> rdf:type rdft:TestTurtleEval ;
    mf:name    "turtle-subm-23" ;
-   rdfs:comment "negative integer, decimal and doubles" ;
+   rdfs:comment "comments" ;
    mf:action    <turtle-subm-23.ttl> ;
    mf:result    <turtle-subm-23.nt> ;
    .
 
 <#turtle-subm-24> rdf:type rdft:TestTurtleEval ;
    mf:name    "turtle-subm-24" ;
-   rdfs:comment "long literal ending in double quote" ;
+   rdfs:comment "no final mewline" ;
    mf:action    <turtle-subm-24.ttl> ;
    mf:result    <turtle-subm-24.nt> ;
    .
 
 <#turtle-subm-25> rdf:type rdft:TestTurtleEval ;
    mf:name    "turtle-subm-25" ;
-   rdfs:comment "boolean literals" ;
+   rdfs:comment "repeating a @prefix changes pname definition" ;
    mf:action    <turtle-subm-25.ttl> ;
    mf:result    <turtle-subm-25.nt> ;
    .
 
 <#turtle-subm-26> rdf:type rdft:TestTurtleEval ;
    mf:name    "turtle-subm-26" ;
-   rdfs:comment "comments" ;
+   rdfs:comment "Variations on decimal canonicalization" ;
    mf:action    <turtle-subm-26.ttl> ;
    mf:result    <turtle-subm-26.nt> ;
    .
 
 <#turtle-subm-27> rdf:type rdft:TestTurtleEval ;
    mf:name    "turtle-subm-27" ;
-   rdfs:comment "no final mewline" ;
+   rdfs:comment "Repeating @base changes base for relative IRI lookup" ;
    mf:action    <turtle-subm-27.ttl> ;
    mf:result    <turtle-subm-27.nt> ;
    .
