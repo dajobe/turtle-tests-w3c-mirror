@@ -301,6 +301,11 @@
     <#turtle-eval-bad-02>
     <#turtle-eval-bad-03>
     <#turtle-eval-bad-04>
+
+    <#LITERAL_LONG2_with_REVERSE_SOLIDUS>
+    <#turtle-syntax-bad-LITERAL2_with_langtag_and_datatype>
+    <#two_LITERAL_LONG2s>
+    <#langtagged_LONG_with_subtag>
     ) .
 
 # atomic tests
@@ -2056,3 +2061,32 @@
    rdfs:comment "Bad IRI : {abc} (negative evaluation test)" ;
    mf:action    <turtle-eval-bad-04.ttl> ;
    .
+
+# Dave Beckett's contributions <http://www.w3.org/alpine.DEB.2.02.1303231530340.12417@xyzzy.dajobe.org>
+<#LITERAL_LONG2_with_REVERSE_SOLIDUS> rdf:type rdft:TestTurtleEval ;
+   mf:name    "LITERAL_LONG2_with_REVERSE_SOLIDUS" ;
+   rdfs:comment "REVERSE SOLIDUS at end of LITERAL_LONG2" ;
+   mf:action    <LITERAL_LONG2_with_REVERSE_SOLIDUS.ttl> ;
+   mf:result    <LITERAL_LONG2_with_REVERSE_SOLIDUS.nt> ;
+   .
+
+<#turtle-syntax-bad-LITERAL2_with_langtag_and_datatype> rdf:type rdft:TestTurtleNegativeSyntax ;
+   mf:name    "turtle-syntax-bad-num-05" ;
+   rdfs:comment "Bad number format (negative test)" ;
+   mf:action    <turtle-syntax-bad-LITERAL2_with_langtag_and_datatype.ttl> ;
+   .
+
+<#two_LITERAL_LONG2s> rdf:type rdft:TestTurtleEval ;
+   mf:name    "two_LITERAL_LONG2s" ;
+   rdfs:comment "two LITERAL_LONG2s testing quote delimiter overrun" ;
+   mf:action    <two_LITERAL_LONG2s.ttl> ;
+   mf:result    <two_LITERAL_LONG2s.nt> ;
+   .
+
+<#langtagged_LONG_with_subtag> rdf:type rdft:TestTurtleEval ;
+   mf:name      "langtagged_LONG_with_subtag" ;
+   rdfs:comment "langtagged LONG with subtag \"\"\"Cheers\"\"\"@en-UK" ;
+   mf:action    <langtagged_LONG_with_subtag.ttl> ;
+   mf:result    <langtagged_LONG_with_subtag.nt> ;
+   .
+
